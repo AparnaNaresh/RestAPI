@@ -52,7 +52,7 @@ public class Service {
 	{
 		RequestSpecification get = RestAssured.given();
 		Response getResponse = get.post(ServiceURL.getURL);
-		
+		System.out.println(getResponse);
 		JSONObject json = new JSONObject(getResponse);
 		
 		System.out.println(json);
